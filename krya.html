@@ -1,0 +1,24 @@
+<script>
+    // 
+    // mnogomerni massiv - massiv sostoyaschi iz massivov
+    // massiv oblast pamyati dlya hraneniya znachenii
+    // peremmennaya eto oblast pamyati dlya hraneniya pamyati
+
+    let num = 0;
+    let arr = [2, 3, 1]
+    let arrX2 = [[1, -1], [3, 4], [0, 0]]
+    let arrX2_1 = new Array(3,new Array(5), new Array(5), new Array(5))
+    
+    for(let i = 0; i < arrX2_1.length; i++)
+    {
+        let str
+        for(let j = 0; j < arrX2_1[i].length; j++)
+        {
+            arrX2_1[i][j] = Math.floor(Math.random()*10)
+            str+=arrX2_1[i][j]+" ";
+        }
+        str+="\n";
+    }
+    console.log(str)
+
+</script>
